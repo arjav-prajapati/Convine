@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fafafa;
+    overflow:auto;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+body img{
+    user-select: none;
+}
+
+
+.settings{
+    width: fit-content;
+    height: fit-content;
+    position:absolute;
+    left:30%;
+    margin: 5px 20px;
+}
+h2{
+    padding: 5px 10px;
+}
+
+.settings_menu{
+    display: block; 
+    margin: 20px 0px;
+    
+}
+
+.settings_menu>a{
+    width: 100%;
+    display: inline;
+    margin: 5px;
+    font-size: 18px;
+    color: #7c7c7c;
+    text-decoration: none;
+    padding: 5px 10px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+
+}
+
+.settings_menu>a:hover{
+    color: black;
+}
+
+.settings_menu>a:focus{
+    color: black;
+    outline: none;
+    /* border: 2px solid #4f45d3; */
+}
+
+.sub_menu{
+    margin:40px 0px;
+    height: fit-content;
+   
+    
+}
+
+.sub_menu>div>h3{
+    margin: 10px;
+}
+
+.sub_menu_settings{
+    position: relative;
+    /* border: 2px solid black; */
+    margin: 15px 10px;
+    display: flex;
+}
+
+.sub_menu_settings_name{
+    /* border: 2px soliid black; */
+    width: fit-content;
+    height: fit-content;
+    display: block;
+    margin: 5px;
+}
+
+.sub_menu_settings_name>input[type=date]{
+    padding: 5px 5px;
+    margin: 10px 0;
+    align-items: center;
+    display: flex;
+}
+
+
+.sub_menu_settings_name>p,#block_p{
+    font-size: 12px;
+    margin: 1px 0px;
+    color: #7c7c7c;
+}
+
+.sub_menu_settings>button{
+    position: absolute;
+    right: 0;
+    margin: 5px 5px;
+    padding: 5px;
+    border-radius: 15px;
+    /* border-color: #4f45d3; */
+    color: #4f45d3;
+    outline: none;
+    background-color: white;
+}
+
+
+.sub_menu_settings>select{
+    width: 80px;
+    position: absolute;
+    right: 0;
+    margin: 10px 5px;
+    padding: 5px;
+    border : none;
+    color: #4f45d3;
+    font-weight: bold;
+    outline: none;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+}
+
+.sub_menu_settings_name>input[type=text],textarea,.block_user_div>input,input[type=email],input[type=password],input[type=number]{
+    padding: 10px;
+    font-size: 15px;
+    margin: 10px 0px;
+    width: 100%;
+    position: relative;
+}
+
+input:focus{
+    outline: none;
+    border: 1px solid #4f45d3;
+}
+
+#remaining,#about_remaining{
+    font-size: 15px;
+}
+
+
+#profile_img{
+    width: 125px;
+    height: 125px;
+    margin: 10px;
+    display: block;
+    border-radius: 100%;
+}
+
+.profile_photo{
+    width: fit-content;
+    margin: auto;
+    position: relative;
+}
+
+#edit_profile_img{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    bottom: 15px;
+    right: 5px;
+    margin: 0;
+    background-color: inherit;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.block_user_div{
+    position: relative;
+    width: 100%;
+    margin-top : 5px;
+}
+
+#block_user{
+    width: 100%;
+}
+
+#block_p{
+    font-size: 15px;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+    padding: 2px;
+}
+
+#block_user_btn{
+    font-size: 15px;
+    position: absolute;
+    top: 33%;
+    right: 1%;
+    background-color: white;
+    padding: 2px;
+    border: none;
+    color:  #7c7c7c;
+    cursor: pointer;
+}
+
+.blockuser_list_block{
+    width: 100%;
+    height: fit-content;
+    display: block;
+}
+
+.block_users{
+    width: 100%;
+    display: flex;
+    padding: 5px;
+    position: relative;
+}
+
+.block_users>img{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    padding-right: 3px;   
+}
+
+.block_users>p{
+    font-size: larger;
+    position: relative;
+    margin: auto 5px;
+}
+
+.block_users>button{
+    position: absolute;
+    font-size: 15px;
+    top: 10px;
+    right: 3%;
+    background-color: white;
+    padding-right: 2px;
+    border: none;
+    color:  #7c7c7c;
+    cursor: pointer;
+}
+
+.block_users:hover{
+    border: 1px solid #4f45d3;
+}
+
+#logout{
+    position: absolute;
+    right: 0;
+    margin: 5px 5px;
+    padding: 5px;
+    background-color: #4f45d3;
+    color: white;
+    outline: none;
+    border-color: #4f45d3;
+}
+
+
+
+
+#send-otp,#new_password_btn,#submit_otp{
+    width: 40%;
+    margin: auto;
+    height: 40px;
+    color: white;
+    background-color: #4caf50;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+}
+
+#alert_email,#alert_pass,#alert_otp{
+    width: fit-content;
+    overflow: hidden;
+    padding: 10px;
+    background-color: #cff9b6;
+    color: black;
+    margin: 5px 0;
+    display: none;
+}
+
+
+
+
+@media only screen and (max-width:700px) {
+    
+  .settings{
+      left:0px
+  }
+  .settings_menu>a{
+      font-size:15px;
+  }
+  }

@@ -1,0 +1,376 @@
+* {
+  margin: 0;
+  padding: 0; 
+}
+
+body {
+  background-color: #fafafa;
+}
+
+.main {
+  width: fit-content;
+  height: fit-content;
+  font-family: sans-serif;
+  position: relative;
+  margin: auto;
+}
+
+
+
+.joined_community_hardcoded {
+  height: fit-content;
+  align-items: center;
+  width: auto;
+  margin: 0px 10px 10px 10px;
+  padding: 10px 15px;
+  text-align: center;
+  font-size: 22px;
+  background-color: #afc6ff;
+  cursor: pointer;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  border-radius: 5px;
+}
+
+.joined_community {
+  font-family: "Roboto Slab", serif;
+  height: fit-content;
+  overflow-y: auto;
+}
+
+.joined_community > a > div {
+  height: fit-content;
+  align-items: center;
+  width: auto;
+  margin: 7px;
+  padding: 10px 25px;
+  text-align: left;
+  font-size: 25px;
+  display: flex;
+}
+.joined_community > a > div > img {
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  margin-right: 10px;
+}
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: black;
+}
+.joined_community > a > div:hover {
+  background-color: rgb(241, 241, 241);
+  border-radius: 10px;
+}
+.center {
+  height: fit-content;
+  background-color: #fafafa;
+  width: fit-content;
+  margin: 30px auto;
+  /* margin-top: 100px; */
+}
+
+.right {
+  background-color: #fafafa;
+  height: 65vh;
+  overflow-y: auto;
+  position: fixed;
+  width: 20%;
+  right: 0;
+}
+html,body{
+  min-width: fit-content;
+}
+/* post1 (example how posts will appear */
+.posts {
+  padding: 0px;
+  background-color: rgb(255, 255, 255);
+  width: fit-content;
+  /* border-radius: 15px; */
+}
+.post1 {
+  min-width: 600px;
+  max-width: 650px;
+  /* width:3000px; */
+  height: auto;
+  margin: 30px auto;
+  box-shadow: 0px 10px 10px rgb(201, 201, 201);
+  padding: 10px;
+  background-color: #ccfeff;
+  z-index: 10;
+
+}
+.postnameinfo {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  position: relative;
+}
+
+.post_community_name {
+  display: flex;
+  width: fit-content;
+  cursor: pointer;
+  left: 0;
+}
+
+.post_community_name img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.post_community_name p {
+  margin: auto;
+}
+
+.post_text {
+  margin: 0px 10px;
+  font-size: 30px;
+  cursor:pointer;
+  /* border: 1px solid black;  */
+}
+
+
+.post_img {
+height: 350px;
+max-height:900px;
+width: auto;
+max-width: auto;
+margin: 10px;
+background-color: rgb(37, 37, 37);
+overflow: hidden;
+position: relative;
+cursor:pointer;
+}
+.post_img > img { 
+width: inherit;
+max-width: 100%;
+height: inherit;
+max-height: 100%;
+position: absolute;
+left:50%;
+transform: translateX(-50%);
+box-sizing: border-box;
+cursor:pointer;
+
+}
+
+  .post_subtext {
+    margin: 10px;
+    font-size: 20px;
+    cursor:pointer;
+    /* border: 1px solid black; */
+  }
+  
+  .post_btns {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    gap: 10px;
+    position: relative;
+    /* left: 10px; */
+    
+    
+}
+.post_upvote,
+.post_downvote,
+.post_comment,
+.post_save {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+.post_upvote  > img,
+.post_downvote > img,
+.post_comment  > img,
+.post_save  > img {
+  width: 100%;
+  height: 100%; 
+  transition: 0.2s ease-in;
+}
+.post_upvote  > img:hover,.post_downvote  > img:hover,.post_comment  > img:hover,.post_save> img:hover{
+  transform: scale(1.2);
+  
+}
+
+
+#posted_time{
+  width: fit-content;
+  float: right;
+  position: relative;
+  bottom: 15px;
+}
+
+
+.send_message_btn {
+  margin: 10px auto;
+  width: fit-content;
+}
+.send_message_btn > button {
+  width: fit-content;
+  height: auto;
+  font-size: 25px;
+  height: fit-content;
+  align-items: center;
+  width: auto;
+  margin: 0px 10px;
+  padding: 10px 15px;
+  text-align: center;
+  font-size: 25px;
+  background-color: #afeaff;
+  cursor: pointer;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  border-radius: 15px;
+  border: none;
+}
+
+/* .send_message_btn>button:hover {
+background-color: #85daf8;
+} */
+
+.send_message_to_users > div {
+  height: fit-content;
+  align-items: left;
+  width: auto;
+  margin: 10px 20px;
+  padding: 10px 15px;
+  text-align: left;
+  font-size: 25px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-family: "Roboto Slab", serif;
+}
+.send_message_to_users > div:hover {
+  background-color: rgb(223, 223, 223);
+  border-radius: 15px;
+}
+
+.send_message_to_users > div > img {
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  margin-right: 10px;
+}
+
+/*Hover*/
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(214, 214, 214);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(146, 146, 146);
+}
+
+/* @media only screen and (max-width: 1450px) {
+      .create_community, .joined_community_hardcoded, .joined_community>a>div{
+          font-size: 20px;
+      }
+    
+  @media only screen and (max-width:600px) {
+      .left{
+          display: none;
+      }
+      .main{
+          
+          grid-template-columns: 100%;
+      }
+  } */
+  /* @media only screen and (max-width:1000px) {
+    .post1{
+      width: 80vw;
+    }
+    
+}
+*/
+
+.post_user_name{
+  height: 25px;
+  align-items: center;
+  display: flex;
+  max-height: 25px;
+}
+
+.post_user_name>span{
+  width: inherit;
+  display: block;
+  width: fit-content;
+  float: right;
+  position: relative;
+  /* border-radius: 50%; */
+  /* margin: 0 0 0 5px; */
+  padding: 0 5px;
+  text-align: center;
+  display: none;
+  z-index: 1;
+  padding-left: 8px;
+  cursor: pointer;
+  
+} 
+
+.post_user_name>span:hover{
+  background-color: rgb(228, 227, 227);
+  user-select: none;
+}
+
+.post_settings{
+  position: fixed;
+  /* border: 2px solid black; */
+  right: 45px;
+  top: 40px;
+  z-index: 1;
+  background-color: #ccfeff;
+  padding: 5px 2px;
+    display: none;
+    list-style-type: none;
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgb(201, 201, 201);
+    cursor: pointer;
+  }
+  
+  .post_settings>li{
+    padding: 2px;
+    margin: 1px;
+  }
+  
+  .post_settings>li:hover{
+    background-color: white;
+  }
+  
+
+  @media only screen and (max-width:700px) {
+   
+    .post1{
+      min-width: auto;
+    }
+  .post_img {
+  height: 200px;
+    
+  }
+  .center{
+    margin:20px;
+  } 
+  .post_text{
+    font-size:25px;
+  }
+}

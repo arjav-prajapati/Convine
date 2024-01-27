@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+body{
+    /* overflow: hidden; */
+    background-color: rgb(218, 218, 218);
+    font-family: "Roboto", sans-serif;
+}
+.main_div{
+    min-width: 400px;
+    width:fit-content;
+    height: fit-content;
+    margin: 15px auto;
+    background-color: rgb(218, 218, 218);
+    border-radius: 10px;
+    box-shadow: 0px 5px 25px gray;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); 
+    overflow: hidden;
+}
+
+#msgbody::-webkit-scrollbar {
+    display: none;
+}
+#msgbody{
+    width: auto;
+    margin: auto;
+    height:500px;
+    overflow-y:scroll;
+}
+.chat_profile_div{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    padding: 10px;
+}
+.chat_back_button{
+    height: 20px;
+    width: auto;
+    margin: 5px;
+}
+.chat_back_button>a>img{
+    width: 100%;
+    height: 100%;
+
+}
+.chat_prfoile_photo_and_name{
+    display: flex;
+    align-items: center;
+}
+.chat_profile_photo{
+    width: 40px;
+    height: 40px;
+    margin: 0px 10px;
+}
+.chat_profile_photo>img{
+    
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;;
+}
+.chat_profile_name{
+    font-size: 20px;
+}
+.touser>p{
+    width: fit-content;
+    background-color: rgb(88, 88, 255);
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    border-radius: 10px 10px 10px 0px;
+    margin: 10px;
+    float: left;
+    clear: both;
+}
+.fromuser>p{
+    width: fit-content;
+    background-color:rgb(255, 160, 35);
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 10px 10px 0px 10px;
+    margin: 10px;
+    float: right;
+    clear: both;
+}
+.scrollBottom{
+    /* display: none; */
+    width: fit-content;
+    margin: auto;
+}
+.textandbutton{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 10px;
+    padding: 10px;
+    align-items: center;
+    align-content: center;
+    background-color: rgb(255, 255, 255);
+}
+#message{
+    width:100%;
+    height: 40px;
+    outline: none;
+    resize: none;
+    padding: 0px 10px;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+}
+#messageButton{
+    margin: 2px;
+    height: 40px;
+    width: auto;
+    background-color:rgb(255, 255, 255);
+    border: 1px solid gray;
+    outline: none;
+    padding: 10px;
+    cursor: pointer;
+}
+#messageButton>img{
+    width: 100%;
+    height: 100%;
+}
+
+/* Scroll Bar */
+ /*Hover*/
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    
+    background-color: rgb(218, 218, 218);
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(146, 146, 146);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(146, 146, 146);
+  }
+
+  @media only screen and (max-width:700px) {
+    
+    .main_div{
+        min-width: fit-content;
+    }
+    }
