@@ -13,6 +13,8 @@ Convine is a social app just like twitter and reddit , was built primarily lo le
 <p align="left">
     <img src="https://skillicons.dev/icons?i=html,css,js,php,mysql" />
 </p>
+<br/>
+<br/>
 
 # How to set-up project!
 <p align="left">
